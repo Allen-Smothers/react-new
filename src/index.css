@@ -1,0 +1,322 @@
+body {
+  margin: 0;
+  /*font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    serif;*/
+  font-family: 'Arvo', serif;
+  -webkit-font-smoothing: antialiased;  
+  -moz-osx-font-smoothing: grayscale;
+  color: #333333;
+}
+
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  padding: 2%;
+} 
+
+.flex-double-column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+}
+
+@media screen and (min-width: 800px) {
+  .flex-column {
+    flex: 1
+  }
+
+  .flex-double-column {
+    flex: 2
+  }
+}
+
+img{
+  width: 95%;
+  height: auto;
+  padding: 5pt; 
+}
+
+article{
+  text-align: left;
+  margin-bottom: 5%;
+} 
+
+article h5{
+  font-weight: bold;
+  font-style: italic;
+  font-size: 16pt;
+}
+
+h5 a{
+  text-decoration: none;
+  color: #333333;
+}
+
+h5 a:link{  
+  text-decoration: none;
+}
+
+
+/* Header */
+#masthead{
+  font-size: 9pt;
+}
+
+#masthead span{
+  margin-right: 1em;
+}
+
+#header-sec hr{
+  border-top: 1pt solid;    
+}
+
+#top-right{
+  text-align: right;  
+}
+
+#top-right a{
+  margin-right: 1em;
+}
+
+header h1{
+  font-size: 36pt;
+  font-weight: bold;
+  margin: 0;
+}
+
+#header-h1 a{
+  text-decoration: none;
+  color: #333333;
+}
+
+div#date{
+  font-size: 14pt;
+ }
+
+ /*Top Nav*/
+ .nav a{
+  font-size: 14pt;
+  color: #333333;
+}
+
+.nav-link .active{
+  font-weight: bold;
+}
+
+/*Banner*/
+
+section.banner{
+  text-align: center;
+  vertical-align: top;
+  background-color: #CCCCCC;  
+  font-size: 18pt;
+  font-weight: bold;
+  font-style: italic;
+  padding: .2em .2em 1em .2em;  
+  margin-bottom: 1em;
+  overflow-y:hidden;  
+  transition: max-height .8s;
+}
+
+.conthide{
+  max-height: 125pt;
+}
+.contshow{
+  max-height: 250pt;
+}
+
+@media screen and (min-width: 800px) {
+  .conthide{
+    max-height: 100pt;
+  }
+  
+  .contshow{
+    max-height: 200pt;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .conthide{
+    max-height: 75pt;
+  }
+  
+  .contshow{
+    max-height: 150pt;
+  }
+}
+
+
+section.banner #content{ 
+  transition: opacity .8s;
+}
+
+.banner .cta{
+  text-align: right; 
+  padding-right: 1em;  
+  font-size: 14pt;  
+  font-weight: normal;
+  font-style: normal;
+  color: #ffffff;
+  vertical-align: center;
+  
+}
+.banner .cta span{
+  margin-right: .5em; 
+  cursor: pointer;  
+}
+
+#fa-cta{
+  vertical-align: middle;
+}
+
+/*Home*/
+.location{
+  text-transform: uppercase;
+  margin-right: 10pt;
+}
+
+aside article h5{
+  font-size: 18pt;  
+}
+
+.add-hr{
+  border-top: solid 1pt #333333;
+  padding-top: 5%;
+}
+
+aside article .snippet{ 
+  font-size: 12pt;  
+}
+
+main{
+  padding-top: 5%;
+}
+
+section, main{
+  text-align: left;
+}
+
+main article.main-top h5{   
+  font-size: 20pt;  
+}
+
+main article.main-top h5:first-child{   
+  font-weight: normal;
+}
+
+main article .snippet{ 
+  font-size: 10pt;  
+}
+
+/* Right Column*/
+  /*opinion*/
+#opin-header{
+  text-align: center;
+  font-weight: bold;  
+  font-style: italic;
+  font-size: 16pt;
+}
+
+.right-column h5{
+  font-size: 12pt;
+}
+
+.rt-top-inner h5:first-child{   
+  font-weight: normal;
+}
+
+.rt-bottom-inner h5:first-child{   
+  font-style: normal;
+}
+
+  /*travel*/
+#travel-hr{
+  color: #CCCCCC;   
+  font-size: small; 
+  width: 100%;
+  overflow:hidden; 
+  max-height: 2.5em;
+} 
+
+#travel-hr label{
+  margin-right: 5pt;
+  font-weight: bold ; 
+  color: #333333;
+  font-size: 12pt;
+}
+
+.right-column .snippet{ 
+  font-size: 12pt;  
+}
+
+/*Section Detail*/
+
+.sec-detail .flex-row{  
+  padding: 20pt;
+}
+
+.sec-detail .flex-row article img{  
+  margin-bottom: 20pt;
+}
+
+@media screen and (min-width: 800px) {
+  .aside{
+    border-left: solid 1pt;
+  }
+}
+
+.sec-detail .flex-column {
+  padding-top: 0;
+  margin-top: 3%; 
+} 
+
+.sec-detail  h5{
+  font-size: 26pt;
+} 
+
+.sec-detail  .location{
+  font-weight: bold;
+} 
+
+.sec-detail aside h5{
+  font-size: 16pt; 
+  font-weight: normal;
+  color: #666666 
+} 
+
+/*Article Detail*/
+
+.art-detail .flex-row{  
+  padding: 20pt 20pt 0 20pt;
+}
+
+.art-detail .flex-row img{  
+  margin-bottom: 20pt;
+}
+
+.art-detail .flex-column {
+  padding-top: 0;
+  margin-top: 3%; 
+} 
+
+.art-detail  h5{
+  font-size: 26pt;
+} 
+
+.art-detail .location{
+  font-weight: bold;
+} 
+
+.art-detail .flex-row form{  
+  padding: 0 50pt 0 50pt; 
+}
